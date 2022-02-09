@@ -1,6 +1,9 @@
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = 'utf-8'
+-- jk移动时光标下上方保留8行
+vim.o.scrolloff = 8
+vim.o.sidescrolloff = 8
 -- 使用相对行号
 vim.wo.number = true
 vim.wo.relativenumber = true
@@ -11,15 +14,15 @@ vim.o.tabstop = 2
 vim.bo.tabstop = 2
 vim.o.softtabstop = 2
 vim.o.shiftround = true
+vim.o.autoindent = true
+vim.bo.autoindent = true
+vim.o.cindent = true
 -- >> << 时移动长度
 vim.o.shiftwidth = 2
 vim.bo.shiftwidth = 2
--- 新行对齐当前行，空格替代tab
+-- 空格替代tab
 vim.o.expandtab = true
 vim.bo.expandtab = true
-vim.o.autoindent = true
-vim.bo.autoindent = true
-vim.o.smartindent = true
 -- 搜索大小写不敏感，除非包含大写
 vim.o.ignorecase = true
 vim.o.smartcase = true
@@ -40,9 +43,9 @@ vim.wo.wrap = false
 vim.o.whichwrap = 'b,s,<,>,[,],h,l'
 -- 允许隐藏被修改过的buffer
 vim.o.hidden = true
--- 禁止创建备份文件
 -- 鼠标支持
 vim.o.mouse = "a"
+-- 禁止创建备份文件
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.swapfile = false

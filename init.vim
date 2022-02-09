@@ -5,8 +5,6 @@ lua require('keybindings')
 " Packer插件管理
 lua require('plugins')
 " 皮肤设置
-syntax enable
-set background=dark " or light if you want light mode
 colorscheme nord
 " 插件配置
 lua require('plugin-config/nvim-tree')

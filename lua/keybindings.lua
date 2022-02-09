@@ -11,6 +11,7 @@ local opt = {
 map("n", "<leader>i", "gg=G", opt)
 map("n", "<C-b>", ":RunFile<CR>", opt)
 map("n", "<leader>v", '"+gp', opt)
+-- 复制全部
 map("n", "<leader>c", "ggVGy", opt)
 -- alt + hjkl  窗口之间跳转
 map("n", "<A-h>", "<C-w>h", opt)
